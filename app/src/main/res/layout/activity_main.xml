@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/frame_layout_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFCD63"
+android:elevation="?attr/listPreferredItemHeight"
+tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/ambiant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#A0BEDC"
+            android:ems="10"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Sons ambiants"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listeSonsAmbiants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D6E3F0"
+            android:paddingStart="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/ponctuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D5BE8D"
+            android:ems="10"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Sons ponctuels"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listeSonsPonctuels"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0E8D6"
+            android:paddingStart="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="#FFEDC7"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/SonsAmbiants"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#7DBEFF"
+            android:gravity="center"
+            android:text="Sons Ambiants"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ambiants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C7E3FF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/redcross" />
+
+            <TextView
+                android:id="@+id/AmbiantSounds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Glisser un son ici" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#C7E3FF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <Switch
+                android:id="@+id/onOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.05"
+                android:text="ON/OFF"
+                android:textColor="#606060" />
+
+            <TextView
+                android:id="@+id/volumeData"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="#000000" />
+
+            <SeekBar
+                android:id="@+id/volume"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:progress="15" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/SonsPonctuels"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFCD63"
+            android:gravity="center"
+            android:text="Sons Ponctuels"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/volumeGenLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/volumeDataGen"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="#000000" />
+
+            <SeekBar
+                android:id="@+id/volumeGen"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:progress="15" />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RVsoundsIndiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEDC7" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RVsoundsGroupe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEDC7" />
+
+    </LinearLayout>
+</LinearLayout>
+
+</FrameLayout>

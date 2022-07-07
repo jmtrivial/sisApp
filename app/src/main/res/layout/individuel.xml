@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFEDC7"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingStart="2dp"
+    android:paddingEnd="2dp"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp">
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/deleteIndiv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/redcross" />
+
+    <TextView
+        android:id="@+id/soundIndiv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="empty"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <Switch
+        android:id="@+id/onOffIndiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:gravity="center"
+        android:textColor="#606060"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/volumeDataIndiv"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="15"
+        android:textColor="#000000" />
+
+    <SeekBar
+        android:id="@+id/volumeIndiv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:progress="15" />
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFEDC7"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/numeroGroupe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="1"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/deleteGroupe"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/redcross" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/soundGroupe"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="empty"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Switch
+            android:id="@+id/onOffGroupe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#606060"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/volumeDataGroupe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="15" />
+
+        <SeekBar
+            android:id="@+id/volumeGroupe"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:progress="15" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/reverseTexte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Inverser le sens de circulation du son" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/reverseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F0E8D6"
+            android:textColor="#008577"
+            android:text="---->" />
+    </LinearLayout>
+
+</LinearLayout>

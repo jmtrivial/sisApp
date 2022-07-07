@@ -1,0 +1,10 @@
+<communication_tablette>
+    <groupe1 numbers="" />
+    <groupe2 numbers="" />
+    <groupe3 numbers="" />
+    <individuels numbers="12345678" />
+    <sonAmbiant titre="Son_de_voiture" />
+    <sonAmbiant titre="Son_de_coq" />
+    <sonPonctuel titre="Son_de_pluie" />
+    <sonPonctuel titre="Son_de_tram" />
+</communication_tablette>

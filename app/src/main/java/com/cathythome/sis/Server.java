@@ -35,7 +35,8 @@ import androidx.appcompat.view.menu.MenuView;
 
     @Override
     public void run() {
-        final String serverHost = "192.168.0.10";
+        // final String serverHost = "192.168.0.10"; // CRDV
+        final String serverHost = "10.0.2.2"; // machine virtuelle dans android studio
         Socket socketOfClient = null;
         this.os = null;
         this.is = null;
